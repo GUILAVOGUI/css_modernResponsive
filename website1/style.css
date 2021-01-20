@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.card {
+  border: 1px solid #222;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: whitesmoke;
+  text-align: center;
+}
+.container {
+  padding: 5px;
+  min-height: 100px;
+  position: relative;
+}
+.container img {
+  max-width: 100%;
+}
+.container h2 {
+  text-align: center;
+}
+.col {
+  float: left;
+  position: relative;
+  border-radius: 20px;
+  padding: 10px;
+}
+.col-4 {
+  width: 25%;
+}
+
+.hero {
+  color: white;
+  font-size: 1.5em;
+  background-color: #222;
+  text-align: center;
+  padding: 20px;
+}
+.hero h1 {
+  font-size: 3em;
+}
+.header {
+  height: 100px;
+}
+
+.section {
+  clear: both;
+  border: 1px solid #ddd;
+  padding: 20px 0;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+.logo {
+  float: left;
+  background-color: blue;
+  color: white;
+  width: 200px;
+  height: 50px;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 50px;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  line-height: 50px;
+}
+nav ul li a {
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+
+nav ul li:hover a {
+  background-color: white;
+  color: black;
+}
+
+.mainHeader {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  padding: 5px;
+  height: 100px;
+}
+
+@media all and (max-width: 760px) {
+  body {
+    background-color: red;
+  }
+  .logo {
+    float: none;
+    margin: 10px auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+  nav ul {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  nav ul li {
+    float: initial;
+    display: inline-block;
+  }
+  .mainHeader {
+    height: auto;
+  }
+  nav ulli a {
+    padding: 0 15px;
+  }
+  .col-4 {
+    width: 100%;
+  }
+}
+@media all and (max-width: 600px) {
+  .col-3 {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+}
