@@ -17,21 +17,60 @@ body {
   padding: 5px;
   min-height: 100px;
   position: relative;
+  margin: 0 auto;
 }
 .container img {
   max-width: 100%;
 }
 .container h2 {
   text-align: center;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  font-size: 3em;
 }
 .col {
   float: left;
   position: relative;
-  border-radius: 20px;
-  padding: 10px;
+  padding: 5px;
 }
 .col-4 {
   width: 25%;
+}
+
+.col-3 {
+  width: 33.3%;
+}
+.col-2 {
+  width: 50%;
+}
+.box {
+  background-color: white;
+  border-radius: 5px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.box header {
+  background-color: #333;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  line-height: 45px;
+  font-size: 2em;
+}
+.box .content {
+  padding: 10px;
+  font-size: 1.4em;
+}
+.box .content::first-letter {
+  font-size: 2em;
+}
+.box footer {
+  background-color: #ddd;
+  color: white;
+  text-align: center;
+  line-height: 45px;
 }
 
 .hero {
@@ -133,8 +172,10 @@ nav ul li:hover a {
   }
 }
 @media all and (max-width: 600px) {
-  .col-3 {
-    max-width: 100%;
+  .col-3,
+  .col-2,
+  .col-1 {
+    width: 100%;
     margin: auto;
     text-align: center;
   }
